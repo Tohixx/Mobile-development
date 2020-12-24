@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="fashion_taital">Diagram</h1>
+
+    <div class="row no-gutters border rounded overflow-hidden">
+
+        <img src="data:image/png;base64,{{ data }}" alt="">
+
+        <form class="form-inline">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">x</span>
+                <input class="form-control" type="search" value="{{ x }}" name="x" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon2">y</span>
+                <input class="form-control" type="search" value="{{ y }}" name="y" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon3">z</span>
+                <input class="form-control" type="search" value="{{ z }}" name="z" aria-describedby="basic-addon3">
+            </div>
+            <button class="btn btn-outline my-2 my-sm-0" type="submit" style="margin: auto">Render</button>
+        </form>
+
+    </div>
+
+{% endblock %}
